@@ -3,6 +3,9 @@
         <meta charset="UTF-8">
         <title>helloSelector</title>
     </head>
+    <header>
+        <a href="http://darkgtr.azurewebsites.net/index.html"><h1>HOME</h1></a><br><hr><br>
+    </header>
     <body>
         <h1> Where would you like to say hello? </h1><br><hr><br>
         <a href= "http://darkgtr.azurewebsites.net/helloPrinter.php?planet=Earth">Earth</a><br>
