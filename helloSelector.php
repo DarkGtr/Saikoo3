@@ -15,10 +15,10 @@
                 $mugs = "mugs";
                 $SR = "specs and sausage rolls";
                 for ($i = 1; $i < 31; $i++) {
-                    ECHO "on the " . $i . " of the month " . $noproducts . " are available<br>";
-                    ECHO "on the " . $i . " of the month " . $specs . " are available<br>";
-                    ECHO "on the " . $i . " of the month " . $mugs . " are available<br>";
-                    ECHO "on the " . $i . " of the month " . $SR . " are available<br>";
+                    ECHO "on the " . $i . " of the month " . $noproducts . " are available<br>".
+                    "on the " . $i . " of the month " . $specs . " are available<br>".
+                    "on the " . $i . " of the month " . $mugs . " are available<br>".
+                    "on the " . $i . " of the month " . $SR . " are available<br>";
                 }
             ?>
         </div>
