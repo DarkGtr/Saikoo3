@@ -29,22 +29,6 @@
                         ECHO "On the " . $i ." of the month no products are available<br>";
                     }
                 }
-            ?><br><hr><br>
-        </div>
-        <div>
-            <?php
-            do {
-                if($i % 4 == 0){
-                    ECHO "On the " . $i ." of the month specs and sausage rolls are available<br>";
-                } elseif($i % 2 == 0) {
-                    ECHO "On the " . $i ." of the month mugs are available<br>";
-                } elseif ($i % 3 == 0){
-                    ECHO "On the " . $i ." of the month specs are available<br>";
-                } else {
-                    ECHO "On the " . $i ." of the month no products are available<br>";
-                }
-            }
-            While ($i > 18);
             ?>
         </div>
     </body>
