@@ -10,9 +10,15 @@
         <a href= "http://darkgtr.azurewebsites.net/helloPrinter.php?planet=Uranus">Uranus</a><br><hr><br>
         <div>
             <?php
-                $myarray = array("no products", "specs", "mugs", "specs and sausage rolls");
+                $noproducts = "no products ";
+                $specs = "specs";
+                $mugs = "mugs";
+                $SR = "specs and sausage rolls";
                 for ($i = 1; $i < 31; $i++) {
-                    ECHO "on the" . $i . " of the month" . $myarray . " are available<br>";
+                    ECHO "on the " . $i . " of the month " . $noproducts . " are available<br>";
+                    ECHO "on the " . $i . " of the month " . $specs . " are available<br>";
+                    ECHO "on the " . $i . " of the month " . $mugs . " are available<br>";
+                    ECHO "on the " . $i . " of the month " . $SR . " are available<br>";
                 }
             ?>
         </div>
