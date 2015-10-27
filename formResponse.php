@@ -1,5 +1,5 @@
 <?php
-    $forename = $_POST ["forename "];
+    $forename = $_POST ["forename"];
     $surname = $_POST ["surname"];
-        ECHO $forename . $surname;
+        ECHO $forename . "" . $surname;
 ?>
