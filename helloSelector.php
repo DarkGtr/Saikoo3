@@ -20,13 +20,13 @@
 
                 for ($i = 1; $i < 31; $i++) {
                     if($i % 4 == 0){
-                        ECHO "sausage rolls";
+                        ECHO "On the " . $i ." of the month specs and sausage rolls are available<br>";
                     } elseif($i % 2 == 0) {
-                        ECHO "specs";
+                        ECHO "On the " . $i ." of the month mugs are available<br>";
                     } elseif ($i % 3 == 0){
-                        ECHO "mugs";
+                        ECHO "On the " . $i ." of the month specs are available<br>";
                     } else {
-                        ECHO "no products";
+                        ECHO "On the " . $i ." of the month no products are available<br>";
                     }
 
                     /*ECHO "on the " . $i . " of the month " . $noproducts . " are available<br>".
