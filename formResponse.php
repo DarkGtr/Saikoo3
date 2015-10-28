@@ -8,8 +8,8 @@
     </header>
     <body background = "http://thumbs.dreamstime.com/t/white-linen-texture-background-30801625.jpg">
         <?php
-            $forename = $_POST ["forename"];
-            $surname = $_POST ["surname"];
+            $forename = $_POST ["<h1>forename</h1>"];
+            $surname = $_POST ["<h1>surname</h1>"];
             ECHO $forename . " " . $surname;
         ?>
     </body>
