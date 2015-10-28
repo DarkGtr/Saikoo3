@@ -6,7 +6,7 @@
     <header>
         <a href="http://darkgtr.azurewebsites.net/index.html"><h1>HOME</h1></a><hr><br>
     </header>
-    <body>
+    <body background = "http://thumbs.dreamstime.com/t/white-linen-texture-background-30801625.jpg">
         <?php
             $query = $_GET ["planet"];
             ECHO " Hello " . $query;

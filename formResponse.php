@@ -6,8 +6,10 @@
     <header>
         <a href="http://darkgtr.azurewebsites.net/index.html"><h1>HOME</h1></a><hr><br>
     </header>
-<?php
-    $forename = $_POST ["forename"];
-    $surname = $_POST ["surname"];
-        ECHO $forename . " " . $surname;
-?>
+    <body background = "http://thumbs.dreamstime.com/t/white-linen-texture-background-30801625.jpg">
+        <?php
+            $forename = $_POST ["forename"];
+            $surname = $_POST ["surname"];
+            ECHO $forename . " " . $surname;
+        ?>
+    </body>
