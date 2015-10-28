@@ -10,6 +10,6 @@
         <?php
             $forename = $_POST ["forename"];
             $surname = $_POST ["surname"];
-            ECHO "<h1>$forename</h1>" . " " . "<h1>$surname</h1>";
+            ECHO $forename . " " . $surname;
         ?>
     </body>
