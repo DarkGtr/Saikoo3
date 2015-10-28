@@ -9,6 +9,6 @@
     <body background = "http://thumbs.dreamstime.com/t/white-linen-texture-background-30801625.jpg">
         <?php
             $query = $_GET ["planet"];
-            ECHO " Hello " . $query;
+            ECHO " <h2>Hello</h2> " . "<h2>$query</h2>";
         ?>
     </body>

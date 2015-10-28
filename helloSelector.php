@@ -8,9 +8,9 @@
     </header>
     <body background = "http://thumbs.dreamstime.com/t/white-linen-texture-background-30801625.jpg">
         <h1> Where would you like to say hello? </h1><br><hr><br>
-        <a href= "http://darkgtr.azurewebsites.net/helloPrinter.php?planet=Earth">Earth</a><br>
-        <a href= "http://darkgtr.azurewebsites.net/helloPrinter.php?planet=Mars">Mars</a><br>
-        <a href= "http://darkgtr.azurewebsites.net/helloPrinter.php?planet=Uranus">Uranus</a><br><hr><br>
+        <a href= "http://darkgtr.azurewebsites.net/helloPrinter.php?planet=Earth"><h2>Earth</h2></a><br>
+        <a href= "http://darkgtr.azurewebsites.net/helloPrinter.php?planet=Mars"><h2>Mars</h2></a><br>
+        <a href= "http://darkgtr.azurewebsites.net/helloPrinter.php?planet=Uranus"><h2>Uranus</h2></a><br><hr><br>
         <div>
             <?php
                 $noproducts = "no products ";
