@@ -28,20 +28,35 @@
         </div>
         <div>
             <?php
-                $myage = 17;
+            //Set the stock levels
+            $spec_stock = 7;
+            $mug_stock = 7;
+            $sausageroll_stock = 7;
+            //Set the first date of the month
+            $monthDate = 1;
+            while(($spec_stock > 0) && ($mug_stock > 0) && ($sausageroll_stock > 0)) {
+                $todaysGood = rand(0,2);
+                //specs = 0
+                //mugs = 1
+                //sausagerolls = 2
 
-                if ($myage >= 21) {
-                echo "You can buy specs, mugs, and sausage rolls";
+                switch ($todaysGood) {
+                    case 0:
+                        $spec_stock--;
+                        echo "On day " . $monthDate . " Specs are available";
+                        break;
+                    case 1:
+                        $mug_stock--;
+                        echo "On day " . $monthDate . " Mugs are available";
+                        break;
+                    case 2:
+                        $sausageroll_stock--;
+                        echo "On day " . $monthDate . " Sausage Rolls are available";
+                        break;
                 }
-                elseif ($myage >= 18) {
-                echo "You can buy specs and mugs";
-                }
-                elseif ($myage >= 16) {
-                echo "You can buy specs";
-                }
-                else {
-                echo "You can't buy anything";
-                }
+                $monthDate++; //puts the month forward by one day
+            }
+            echo "No more goods are available this month";
             ?>
         </div>
     </body>
