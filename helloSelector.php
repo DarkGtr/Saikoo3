@@ -30,6 +30,8 @@
             <?php
                 $length = strlen("david");
                 print $length;
+                print rand(0,100);
+                print rand();
             ?>
         </div>
     </body>
