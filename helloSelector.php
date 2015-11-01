@@ -13,11 +13,6 @@
         <a href= "http://darkgtr.azurewebsites.net/helloPrinter.php?planet=Uranus"><h2>Uranus</h2></a><hr><br>
         <div>
             <?php
-                $noproducts = "no products ";
-                $specs = "specs";
-                $mugs = "mugs";
-                $SR = "specs and sausage rolls";
-
                 for ($i = 1; $i < 31; $i++) {
                     if($i % 4 == 0){
                         ECHO "On the " . $i ." of the month specs and sausage rolls are available<br>";
@@ -28,6 +23,24 @@
                     } else {
                         ECHO "On the " . $i ." of the month no products are available<br>";
                     }
+                }
+            ?>
+        </div>
+        <div>
+            <?php
+                $myage = 28;
+
+                if ($myage >= 21) {
+                echo "You can buy specs, mugs, and sausage rolls";
+                }
+                elseif ($myage >= 18) {
+                echo "You can buy specs and mugs";
+                }
+                elseif ($myage >= 16) {
+                echo "You can buy specs";
+                }
+                else {
+                echo "You can't buy anything";
                 }
             ?>
         </div>
