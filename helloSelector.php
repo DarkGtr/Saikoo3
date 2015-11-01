@@ -26,7 +26,7 @@
                 }
             ?>
         </div>
-        <div>
+        <div><hr><br>
             <?php
                 $length = strlen("david");
                 print $length;
