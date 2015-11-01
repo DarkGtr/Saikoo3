@@ -28,7 +28,7 @@
         </div>
         <div>
             <?php
-                $myage = 28;
+                $myage = 17;
 
                 if ($myage >= 21) {
                 echo "You can buy specs, mugs, and sausage rolls";
