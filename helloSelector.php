@@ -52,6 +52,13 @@
                 WHILE ($row = $result->fetch_array()) {
                     echo  "<p>" . $row['title'] . "</p>";
                 }
+                $result->close();
+                $db->close();
+            ?>
+        </div><br><hr><br>
+        <div>
+            <?php
+
             ?>
         </div>
     </body>
