@@ -20,8 +20,8 @@
 
         $sql_2010 = "SELECT * FROM marvelmovies WHERE yearReleased < 2010";
         $result = $db->query($sql_2010);
-        /*WHILE ($row = $result->fetch_array()) {
-        }*/
+        WHILE ($row = $result->fetch_array()) {
+        }
         $query = $_GET ["$sql_2010"];
         ECHO $sql_2010;
         ?>
