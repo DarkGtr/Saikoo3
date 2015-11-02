@@ -49,6 +49,9 @@
 
                 $sql_query = "SELECT * FROM superheros WHERE superpower LIKE '%laser%'";
                 $result = $db->query($sql_query);
+                WHILE ($row = $result->fetch_array()) {
+                    echo $row ['superheroName'];
+                }
             ?>
         </div>
     </body>
