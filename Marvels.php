@@ -40,14 +40,14 @@
         $search = "SELECT * FROM marvelmovies WHERE yearReleased > 2010";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
-            ECHO $row;
+            echo  "<p>" . $row['title'] . "</p>";
         }
 
         if($_POST ["$search"] == "Oscar"){
         $search = "SELECT * FROM marvelmovies WHERE notes LIKE '%Oscars%'";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
-            ECHO $row;
+            echo  "<p>" . $row['title'] . "</p>";
         }
 
 
