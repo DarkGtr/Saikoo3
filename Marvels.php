@@ -23,6 +23,6 @@
         WHILE ($row = $result->fetch_array()) {
         }
         $query = $_GET ["$sql_2010"];
-        ECHO $sql_2010;
+        ECHO $row;
         ?>
     </body>
