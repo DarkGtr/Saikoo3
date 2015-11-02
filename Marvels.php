@@ -20,7 +20,7 @@
         if ($db -> connect_errno) {
             die('connectfailed[' . $db->connect_error . ']');
         }
-        echo "<p>" . $_POST['search'] . "</p>";
+       // echo "<p>" . $_POST['search'] . "</p>";
         if($_POST['search'] == "G2010"){
         $search = "SELECT * FROM marvelmovies WHERE yearReleased < 2010";
         $result = $db->query($search);
@@ -32,7 +32,7 @@
         $search = "SELECT * FROM marvelmovies WHERE productionStudio = Marvel Studios";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
-            ECHO $row;
+            echo  "<p>" . $row['title'] . "</p>";
         }
 
 
