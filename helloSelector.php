@@ -52,13 +52,19 @@
                 WHILE ($row = $result->fetch_array()) {
                     echo  "<p>" . $row['title'] . "</p>";
                 }
-                $result->close();
-                $db->close();
             ?>
         </div><br><hr><br>
         <div>
             <?php
+                $sql_2010 = "SELECT * FROM marvelmovies WHERE yearReleased < 2010";
+                $result = $db->query($sql_2010);
+                WHILE ($row = $result->fetch_array()) {
+                    ECHO "<p>" . $row['title'] . "</p>";
+                }
 
+
+                $result->close();
+                $db->close();
             ?>
         </div>
     </body>
