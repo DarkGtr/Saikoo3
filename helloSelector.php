@@ -47,10 +47,10 @@
                     die('connectfailed[' . $db->connect_error . ']');
                 }
 
-                $sql_query = "SELECT * FROM superheros WHERE superpower LIKE '%laser%'";
+                $sql_query = "SELECT * FROM marvelmovies";
                 $result = $db->query($sql_query);
                 WHILE ($row = $result->fetch_array()) {
-                    echo  "<p>" . $row['superheroName'] . "</p>";
+                    echo  "<p>" . $row['title'] . "</p>";
                 }
             ?>
         </div>
