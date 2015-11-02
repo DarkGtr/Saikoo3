@@ -20,15 +20,15 @@
         if ($db -> connect_errno) {
             die('connectfailed[' . $db->connect_error . ']');
         }
-
-        if($_POST ['$search'] == "G2010"){
+        echo "<p>" . $_POST['$search'] . "</p>";
+        if($_POST['$search'] == "G2010"){
         $search = "SELECT * FROM marvelmovies WHERE yearReleased < 2010";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
             ECHO $row;
         }
 
-        if($_POST [$search] == "MS"){
+        if($_POST[$search] == "MS"){
         $search = "SELECT * FROM marvelmovies WHERE productionStudio = Marvel Studios";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
@@ -36,7 +36,7 @@
         }
 
 
-        if($_POST ['$search'] == "L2010"){
+        if($_POST['$search'] == "L2010"){
         $search = "SELECT * FROM marvelmovies WHERE yearReleased > 2010";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
