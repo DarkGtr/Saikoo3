@@ -43,7 +43,7 @@
             echo  "<p>" . $row['title'] . "</p>";
         }
 
-        if($_POST ["$search"] == "Oscar"){
+        if($_POST ["search"] == "Oscar"){
         $search = "SELECT * FROM marvelmovies WHERE notes LIKE '%Oscars%'";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
