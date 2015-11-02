@@ -44,7 +44,7 @@
         }
 
         if($_POST ["search"] == "Oscar"){
-        $search = "SELECT * FROM marvelmovies WHERE notes LIKE '%Oscars%' OR LIKE '%Oscar'";
+        $search = "SELECT * FROM marvelmovies WHERE notes LIKE '%Oscar_%'";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
             echo  "<p>" . $row['title'] . "</p>";
