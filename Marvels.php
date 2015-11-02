@@ -8,6 +8,9 @@
     </header>
     <body background = "http://thumbs.dreamstime.com/t/white-linen-texture-background-30801625.jpg">
         <?php
+        ini_set('display_errors', 1);
+        ini_set('display_startup_errors', 1);
+        error_reporting(E_ALL);
         $db = new mysqli(
             "eu-cdbr-azure-north-d.cloudapp.net",
             "b3b05dd89d443d",
@@ -18,14 +21,14 @@
             die('connectfailed[' . $db->connect_error . ']');
         }
 
-        if($_GET ["search"] == "G2010"){
+        if($_GET ["$search"] == "G2010"){
         $search = "SELECT * FROM marvelmovies WHERE yearReleased < 2010";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
             ECHO $row;
         }
 
-        if($_GET ["search"] == "MS"){
+        if($_GET ["$search"] == "MS"){
         $search = "SELECT * FROM marvelmovies WHERE productionStudio = Marvel Studios";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
@@ -33,14 +36,14 @@
         }
 
 
-        if($_GET ["search"] == "L2010"){
+        if($_GET ["$search"] == "L2010"){
         $search = "SELECT * FROM marvelmovies WHERE yearReleased > 2010";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
             ECHO $row;
         }
 
-        if($_GET ["search"] == "Oscar"){
+        if($_GET ["$search"] == "Oscar"){
         $search = "SELECT * FROM marvelmovies WHERE notes LIKE '%Oscars%'";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
