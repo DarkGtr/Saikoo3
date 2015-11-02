@@ -29,7 +29,7 @@
         }
 
         if($_POST['search'] == "MS"){
-        $search = "SELECT * FROM marvelmovies WHERE productionStudio = '"Marvel Studios"'";
+        $search = "SELECT * FROM marvelmovies WHERE productionStudio LIKE 'Marvel Studios'";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
             echo  "<p>" . $row['title'] . "</p>";
