@@ -28,14 +28,11 @@
         </div>
         <div><hr><br>
             <?php
-                $length = strlen("david");
-                print $length;
                 $fav_bands = array();
                 array_push($fav_bands, "Katy Perry");
                 array_push($fav_bands, "The Peapods");
                 array_push($fav_bands, "Nickelback");
                 PRINT count($fav_bands);
-
             ?>
         </div>
     </body>
