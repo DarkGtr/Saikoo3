@@ -13,7 +13,7 @@
         <a href= "http://darkgtr.azurewebsites.net/helloPrinter.php?planet=Uranus"><h2>Uranus</h2></a><hr><br>
         <div>
             <?php
-                for ($i = 1; $i < 31; $i++) {
+               /* for ($i = 1; $i < 31; $i++) {
                     if($i % 4 == 0){
                         ECHO "On the " . $i ." of the month specs and sausage rolls are available<br>";
                     } elseif($i % 2 == 0) {
@@ -23,16 +23,29 @@
                     } else {
                         ECHO "On the " . $i ." of the month no products are available<br>";
                     }
-                }
+                } */
             ?>
         </div>
         <div><hr><br>
             <?php
-                $fav_bands = array();
+               /* $fav_bands = array();
                 array_push($fav_bands, "Katy Perry");
                 array_push($fav_bands, "The Peapods");
                 array_push($fav_bands, "Nickelback");
-                PRINT $fav_bands;
+                PRINT $fav_bands ;*/
+            ?>
+        </div>
+        <div>
+            <?php
+                $db = new mysqli(
+                    "hostname",
+                    "username",
+                    "password",
+                    "db_name"
+                );
+                if ($db -> connect_errno) {
+                    die('connectfailed[' . $db->connect_error . ']');
+                }
             ?>
         </div>
     </body>
