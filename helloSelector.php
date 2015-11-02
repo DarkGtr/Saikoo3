@@ -38,10 +38,10 @@
         <div>
             <?php
                 $db = new mysqli(
-                    "hostname",
-                    "username",
-                    "password",
-                    "db_name"
+                    "eu-cdbr-azure-north-d.cloudapp.net",
+                    "b3b05dd89d443d",
+                    "79fb579e",
+                    "db1400003"
                 );
                 if ($db -> connect_errno) {
                     die('connectfailed[' . $db->connect_error . ']');
