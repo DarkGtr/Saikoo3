@@ -47,7 +47,7 @@
                     die('connectfailed[' . $db->connect_error . ']');
                 }
 
-                $sql_query = "SELECT * FROM marvelmovies";
+                $sql_query = "SELECT * FROM marvelmovies WHERE title LIKE 'Captain%'";
                 $result = $db->query($sql_query);
                 WHILE ($row = $result->fetch_array()) {
                     echo  "<p>" . $row['title'] . "</p>";
