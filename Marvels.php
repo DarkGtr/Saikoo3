@@ -21,14 +21,14 @@
             die('connectfailed[' . $db->connect_error . ']');
         }
        // echo "<p>" . $_POST['search'] . "</p>";
-        if($_POST['search'] == "G2010"){
+        if($_GET['search'] == "G2010"){
         $search = "SELECT * FROM marvelmovies WHERE yearReleased < 2010";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
             echo  "<p>" . $row['title'] . "</p>";
         }
 
-        if($_POST['search'] == "MS"){
+        if($_GET['search'] == "MS"){
         $search = "SELECT * FROM marvelmovies WHERE productionStudio LIKE 'Marvel Studios'";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
@@ -36,20 +36,20 @@
         }
 
 
-        if($_POST['search'] == "L2010"){
+        if($_GET['search'] == "L2010"){
         $search = "SELECT * FROM marvelmovies WHERE yearReleased > 2010";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
             echo  "<p>" . $row['title'] . "</p>";
         }
 
-        if($_POST ["search"] == "Oscar"){
+        if($_GET["search"] == "Oscar"){
         $search = "SELECT * FROM marvelmovies WHERE notes LIKE '%Oscar%'";
         $result = $db->query($search);
         WHILE ($row = $result->fetch_array())
             echo  "<p>" . $row['title'] . "</p>";
         }
-
-
+            $result->close();
+           $db->close();
         ?>
     </body>
